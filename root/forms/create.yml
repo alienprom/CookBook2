@@ -1,0 +1,40 @@
+---
+attributes:
+    id: element-form
+
+auto_fieldset:
+    attributes:
+        class: module aligned
+
+---
+elements:
+      - type: Text
+        name: name
+        constraints:
+          - Required
+        label: Название блюда
+
+      - type: Text
+        name: type
+        constraints:
+          - Required
+        label: Вид блюда
+
+      - type: Text
+        name: ingredients
+        constraints:
+          - Required
+        label: Ингредиенты
+
+      - type: Textarea
+        name: process
+        constraints:
+          - Required
+        label: Приготовление
+            
+      - type: Submit
+        name: submit
+        value: Сохранить
+
+constraints:
+      - SingleValue

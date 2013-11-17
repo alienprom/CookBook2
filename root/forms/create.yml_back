@@ -1,0 +1,31 @@
+---
+action: /create
+indicator: submit
+auto_fieldset: 1
+
+elements:
+      - type: Text
+        name: name
+        constraints:
+          - Required
+
+      - type: Text
+        name: type
+        constraints:
+          - Required
+
+      - type: Text
+        name: ingredients
+        constraints:
+          - Required
+
+      - type: Text
+        name: process
+        constraints:
+          - Required
+            
+      - type: Submit
+        name: submit
+
+constraints:
+      - SingleValue

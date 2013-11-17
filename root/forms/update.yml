@@ -1,0 +1,33 @@
+---
+attributes:
+    id: element-form
+
+auto_fieldset:
+    attributes:
+        class: module aligned
+
+---
+elements:
+    - type: Hidden
+      name: id
+
+    - type: Text
+      name: name
+      label: Название блюда
+
+    - type: Text
+      name: type
+      label: Вид блюда
+
+    - type: Text
+      name: ingredients
+      label: Ингредиенты
+
+    - type: Textarea
+      name: process
+      label: Процесс приготовления
+
+    - type: Submit
+      name: submit
+      value: Сохранить
+
